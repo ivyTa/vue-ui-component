@@ -1,0 +1,65 @@
+@import './common.scss';
+//Colors
+$color-main-grey1: #fff;
+$color-main-grey2: #fafafa;
+$color-main-grey3: #f5f5f5;
+$color-main-grey4: #e5e5e5;
+$color-main-grey5: #cdcfd0;
+$color-main-grey6: #b0b3b4;
+$color-main-grey7: #9c9fa1;
+$color-main-grey8: #616669;
+$color-main-grey9: #394043;
+
+$color-main-green1: #e5f6ef;
+$color-main-green2: #ccfef0;
+$color-main-green3: #b2e6d1;
+$color-main-green4: #73d1a6;
+$color-main-green5: #44c2bb;
+$color-main-green6: #00ae66;
+$color-main-green7: #009456;
+$color-main-green8: #007a47;
+$color-main-green9: #00643b;
+
+$color-main-red1: #feeeec;
+$color-main-red2: #feddd9;
+$color-main-red3: #fdccc6;
+$color-main-red4: #fc988b;
+$color-main-red5: #fa7564;
+$color-main-red6: #fa5741;
+$color-main-red7: #d44a37;
+$color-main-red8: #ba4030;
+$color-main-red9: #a13729;
+
+$color-secondary-orange1: #ffb086;
+$color-secondary-orange2: #ff965d;
+$color-secondary-orange3: #d96120;
+$color-secondary-orange4: #ff7326;
+
+$color-secondary-blue1: #93bef5;
+$color-secondary-blue2: #6da9f3;
+$color-secondary-blue3: #4480c9;
+$color-secondary-blue4: #5197ed;
+
+//Font
+$font-pingfang: "PingFang SC";
+$font-stheiti: "STHeiti";
+
+//Size
+$size-first-title: px2rem(22px);
+$size-nav-title: px2rem(18px);
+$size-second-title: px2rem(16px);
+$size-third-title: px2rem(13px);
+$size-first-content: px2rem(12px);
+$size-second-content: px2rem(11px);
+$size-third-content: px2rem(10px);
+
+//Border
+$border-radius-base: px2rem(3px);
+$border-radius-small: px2rem(2px);
+$border-radius-ellipse: 50%;
+$border-radius-circle: 100%;
+
+$border-width-base: 1px;
+$border-style-base: solid;
+$border-color-green: $color-main-green6;
+$border-color-grey: $color-main-grey6;

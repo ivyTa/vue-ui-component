@@ -1,0 +1,47 @@
+@import "./common/var.scss";
+.lj-tag{
+  padding: px2rem(2px) px2rem(6px);
+  box-sizing: border-box;
+  height:px2rem(15px);
+  line-height:px2rem(15px);
+  text-align: center;
+  border-radius: $border-radius-small;
+  font-size: $size-second-content;
+}
+.lj-tag-blue{
+  background-color: rgba(119,163,217,0.1);
+  color: $color-secondary-blue2;
+}
+.lj-tag-orange{
+  background-color: rgba(255,172,128,0.1);
+  color: $color-secondary-orange2;
+}
+.lj-tag-house{
+  background-color: rgba(57,64,67,0.5);
+  height: px2rem(20px);
+  line-height: px2rem(20px);
+  color: $color-main-grey1;
+  border-radius: 0;
+  font-size: $size-second-content;
+}
+.lj-tag-price{
+  background-color: $color-main-red5;
+  height: px2rem(15px);
+  line-height: px2rem(15px);
+  width: px2rem(15px);
+  padding: 0;
+  display: inline-block;
+  line-height: px2rem(15px);
+  color: $color-main-grey1;
+  border-radius: $border-radius-small;
+  font-size: $size-second-content;
+}
+.lj-tag-buy{
+  background-color: $color-main-grey1;
+  height: px2rem(15px);
+  line-height: px2rem(15px);
+  color: $color-main-red6;
+  border-radius: $border-radius-small;
+  border:$border-width-base $border-style-base $color-main-red5;
+  font-size: $size-second-content;
+}

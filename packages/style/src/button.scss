@@ -1,0 +1,49 @@
+@import './common/var.scss';
+//每个按钮分两种类型：normal和disabled
+.lj-button{
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $color-main-green6;
+  color: $color-main-grey1;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  line-height:1;
+  margin: 0;
+  font-size: $size-second-title;
+}
+//重要按钮
+.lj-button-main{
+  width: px2rem(138px);
+  height: px2rem(49px);
+  line-height: px2rem(49px);
+}
+//一般按钮，色块按钮common,color
+@each $type in common,color{
+  .lj-button-#{$type}{
+    height: px2rem(40px);
+    line-height: px2rem(40px);
+    padding: 0 px2rem(10px);
+    border-radius: $border-radius-base;
+  }
+}
+.lj-button-common{
+  background-color: $color-main-grey1;
+  color: $color-main-green6;
+  border: $border-width-base $border-style-base $border-color-green;
+}
+.lj-button-color{
+  background-color: $color-main-green6;
+}
+//文本按钮text
+.lj-button-text{
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  padding: 0 px2rem(10px);
+  border-radius: $border-radius-base;
+  font-size: px2rem(13px);
+  color:$color-main-grey6;
+  border: $border-width-base $border-style-base $border-color-grey;
+  background-color: $color-main-grey1;
+}
