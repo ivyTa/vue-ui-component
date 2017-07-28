@@ -11,7 +11,7 @@
   box-sizing: border-box;
   line-height:1;
   margin: 0;
-  font-size: $size-second-title;
+  font-size: $font-size-medium;
 }
 //重要按钮
 .lj-button-main{
@@ -36,8 +36,8 @@
 .lj-button-color{
   background-color: $color-main-green6;
 }
-//文本按钮text
-.lj-button-text{
+//灰色按钮
+.lj-button-grey{
   height: px2rem(30px);
   line-height: px2rem(30px);
   padding: 0 px2rem(10px);
@@ -46,4 +46,14 @@
   color:$color-main-grey6;
   border: $border-width-base $border-style-base $border-color-grey;
   background-color: $color-main-grey1;
+}
+//文本按钮text
+.lj-button-text{
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  padding: 0 px2rem(10px);
+  border-radius: $border-radius-base;
+  font-size: px2rem(13px);
+  color:$color-main-grey9;
+  background-color: transparent;
 }

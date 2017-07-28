@@ -45,13 +45,15 @@ $font-pingfang: "PingFang SC";
 $font-stheiti: "STHeiti";
 
 //Size
-$size-first-title: px2rem(22px);
-$size-nav-title: px2rem(18px);
-$size-second-title: px2rem(16px);
-$size-third-title: px2rem(13px);
-$size-first-content: px2rem(12px);
-$size-second-content: px2rem(11px);
-$size-third-content: px2rem(10px);
+$font-size-largest: px2rem(22px);
+$font-size-larger: px2rem(18px);
+$font-size-large: px2rem(17px);
+$font-size-medium: px2rem(16px);
+$font-size-small: px2rem(14px);
+$font-size-smaller: px2rem(13px);
+$font-size-smallest: px2rem(12px);
+$font-size-extra-smallest: px2rem(11px);
+$font-size-extra-extra-smallest: px2rem(10px);
 
 //Border
 $border-radius-base: px2rem(3px);

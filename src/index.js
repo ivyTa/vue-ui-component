@@ -1,9 +1,18 @@
-import LjButton from '../packages/button/index.js';
-import LjTag from '../packages/tag/index.js';
+import LjButton from '../packages/button/index';
+import LjTag from '../packages/tag/index';
+import {LjMenu, LjMenuItem, LjMenuItemGroup, LjSubMenu} from '../packages/menu/index';
+import LjDialog from '../packages/dialog/index';
+import LjWatermark from '../packages/watermark/index';
 
 const components = [
     LjButton,
     LjTag,
+    LjMenu,
+    LjMenuItem,
+    LjMenuItemGroup,
+    LjSubMenu,
+    LjDialog,
+    LjWatermark,
 ];
 
 const install = function (Vue) {
@@ -19,4 +28,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 export  {
     LjButton,
     LjTag,
+    LjMenu,
+    LjMenuItem,
+    LjMenuItemGroup,
+    LjSubMenu,
+    LjDialog,
+    LjWatermark,
 };

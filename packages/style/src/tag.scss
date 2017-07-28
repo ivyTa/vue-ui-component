@@ -6,7 +6,7 @@
   line-height:px2rem(15px);
   text-align: center;
   border-radius: $border-radius-small;
-  font-size: $size-second-content;
+  font-size: $font-size-extra-smallest;
 }
 .lj-tag-blue{
   background-color: rgba(119,163,217,0.1);
@@ -22,7 +22,7 @@
   line-height: px2rem(20px);
   color: $color-main-grey1;
   border-radius: 0;
-  font-size: $size-second-content;
+  font-size: $font-size-extra-smallest;
 }
 .lj-tag-price{
   background-color: $color-main-red5;
@@ -34,7 +34,7 @@
   line-height: px2rem(15px);
   color: $color-main-grey1;
   border-radius: $border-radius-small;
-  font-size: $size-second-content;
+  font-size: $font-size-extra-smallest;
 }
 .lj-tag-buy{
   background-color: $color-main-grey1;
@@ -43,5 +43,5 @@
   color: $color-main-red6;
   border-radius: $border-radius-small;
   border:$border-width-base $border-style-base $color-main-red5;
-  font-size: $size-second-content;
+  font-size: $font-size-extra-smallest;
 }

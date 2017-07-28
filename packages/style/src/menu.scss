@@ -1,0 +1,73 @@
+@import "./common/var.scss";
+
+.lj-menu {
+  font-size: $font-size-small;
+  color: $color-main-grey9;
+  padding: 0 px2rem(16px);
+  cursor: pointer;
+  position: relative;
+  transition: border-color .3s, background-color .3s, color .3s;
+  box-sizing: border-box;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .is-active:before {
+    content: '';
+    display: none;
+  }
+}
+
+.lj-menu-dark {
+  justify-content: center;
+  .lj-menu-item {
+    border: 1px solid $color-main-grey9;
+    border-right: none;
+    padding: px2rem(7px) px2rem(16px);
+    &:first-child {
+      //border-top-left-radius: px2rem(3px);
+      //border-bottom-left-radius: px2rem(3px);
+    }
+    &:last-child {
+      border-right: 1px solid $color-main-grey9;
+      border-top-right-radius: px2rem(3px);
+      border-bottom-right-radius: px2rem(3px);
+    }
+
+  }
+  .is-active {
+    color: $color-main-grey1;
+    background-color: $color-main-grey9;
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.lj-menu-horizontal {
+  flex-direction: row;
+}
+
+.is-active {
+  color: $color-main-green6;
+}
+
+.lj-menu-item ,.lj-submenu_title,.lj-menu-item-group_title{
+  position: relative;
+  box-sizing: border-box;
+  padding: px2rem(10px) 0;
+}
+
+.is-active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: px2rem(16px);
+  height: px2rem(2px);
+  background-color: $color-main-green6;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
