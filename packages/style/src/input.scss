@@ -1,0 +1,27 @@
+@import './common/var.scss';
+//0.5px线条
+@mixin bottomLine {
+  background-image: linear-gradient(to bottom,$color-main-grey6 50%,transparent 50%);
+  background-size:  100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+.lj-input-li{
+  padding: 0 px2rem(16px);
+  height: px2rem(49px);
+  line-height: px2rem(49px);
+  font-size: px2rem(17px);
+  color: $color-main-grey9;
+  @include bottomLine;
+}
+.lj-input{
+  width: px2rem(280px);
+  height: px2rem(21px);
+  line-height: px2rem(21px);
+  margin-right: px2rem(6px);
+  float: right;
+  margin-top: px2rem(14px);
+  color: $color-main-grey9;
+  background-color: inherit;
+  text-align: left;
+}

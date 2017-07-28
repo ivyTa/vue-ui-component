@@ -19,7 +19,7 @@
 
         <div>
             <h2 style="font-size: 20px;margin-top: 20px">menu 菜单</h2>
-            <lj-menu :default-active="activeIndex2" class="lj-menu-demo1" mode="horizontal" @select="handleSelect">
+            <lj-menu :default-active="'1'" class="lj-menu-demo1" mode="horizontal" @select="handleSelect">
                 <lj-menu-item index="1">处理中心</lj-menu-item>
                 <lj-submenu index="2">
                     <template slot="title">我的工作台</template>
@@ -31,7 +31,7 @@
                 <lj-menu-item index="4">我的房子</lj-menu-item>
             </lj-menu>
 
-            <lj-menu :default-active="activeIndex2" class="lj-menu-demo2" mode="horizontal" theme="dark" @select="handleSelect">
+            <lj-menu :default-active="'2'" class="lj-menu-demo2" mode="horizontal" theme="dark" @select="handleSelect">
                 <lj-menu-item index="1">二手房</lj-menu-item>
                 <lj-menu-item index="2">新房</lj-menu-item>
                 <lj-menu-item index="3">租房</lj-menu-item>
@@ -78,6 +78,10 @@
             <h2 style="font-size: 20px;margin-top: 20px">watermark 水印</h2>
             <lj-watermark :watermark_txt="'239310'"></lj-watermark>
         </div>
+        <div>
+            <h2 style="font-size: 20px;margin-top: 20px">input 表单</h2>
+            <lj-input :holder="'请输入姓名'">姓名</lj-input>
+        </div>
 
     </div>
 </template>
@@ -85,8 +89,6 @@
     export default {
         data() {
             return {
-                activeIndex: '1',
-                activeIndex2: '1',
                 dialogVisible:false,
             };
         },

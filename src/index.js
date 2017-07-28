@@ -3,6 +3,7 @@ import LjTag from '../packages/tag/index';
 import {LjMenu, LjMenuItem, LjMenuItemGroup, LjSubMenu} from '../packages/menu/index';
 import LjDialog from '../packages/dialog/index';
 import LjWatermark from '../packages/watermark/index';
+import LjInput from '../packages/input/index';
 
 const components = [
     LjButton,
@@ -13,6 +14,7 @@ const components = [
     LjSubMenu,
     LjDialog,
     LjWatermark,
+    LjInput,
 ];
 
 const install = function (Vue) {
@@ -34,4 +36,5 @@ export  {
     LjSubMenu,
     LjDialog,
     LjWatermark,
+    LjInput,
 };
