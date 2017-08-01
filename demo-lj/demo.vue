@@ -85,8 +85,12 @@
 
         <div>
             <h2 style="font-size: 20px;margin-top: 20px">radio 单选</h2>
-            <lj-radio v-model="radio" name="1">选项1</lj-radio>
-            <lj-radio v-model="radio" name="2">选项2</lj-radio>
+            <lj-radio v-model="radio1" label="1">选项1</lj-radio>
+            <lj-radio v-model="radio1" label="2">选项2</lj-radio>
+            <br>
+            <br>
+            <lj-radio v-model="radio2" label="3" type="square">方块1</lj-radio>
+            <lj-radio v-model="radio2" label="4" type="square">方块2</lj-radio>
         </div>
 
     </div>
@@ -96,7 +100,8 @@
         data() {
             return {
                 dialogVisible:false,
-                radio:'1',
+                radio1:'1',
+                radio2:'3',
             };
         },
         methods: {
