@@ -4,6 +4,7 @@ import {LjMenu, LjMenuItem, LjMenuItemGroup, LjSubMenu} from '../packages/menu/i
 import LjDialog from '../packages/dialog/index';
 import LjWatermark from '../packages/watermark/index';
 import LjInput from '../packages/input/index';
+import LjRadio from '../packages/radio/index';
 
 const components = [
     LjButton,
@@ -15,6 +16,7 @@ const components = [
     LjDialog,
     LjWatermark,
     LjInput,
+    LjRadio,
 ];
 
 const install = function (Vue) {
@@ -37,4 +39,5 @@ export  {
     LjDialog,
     LjWatermark,
     LjInput,
+    LjRadio,
 };
