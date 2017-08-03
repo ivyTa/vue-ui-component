@@ -93,6 +93,15 @@
             <lj-radio v-model="radio2" label="4" type="square">方块2</lj-radio>
         </div>
 
+        <div>
+            <h2 style="font-size: 20px;margin-top: 20px">checkbox 多选</h2>
+            <lj-checkbox v-model="model">选项1</lj-checkbox>
+            <lj-checkbox v-model="model">选项2</lj-checkbox>
+            <lj-checkbox v-model="model">选项3</lj-checkbox>
+            <lj-checkbox v-model="model">选项4</lj-checkbox>
+        </div>
+
+
     </div>
 </template>
 <script>
@@ -102,6 +111,7 @@
                 dialogVisible:false,
                 radio1:'1',
                 radio2:'3',
+                model:'',
             };
         },
         methods: {

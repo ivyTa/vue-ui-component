@@ -1,0 +1,35 @@
+@import './common/var.scss';
+
+.lj-checkbox {
+  margin-right: px2rem(28px);
+  position: relative;
+  font-size: $font-size-large;
+  height: px2rem(22px);
+  line-height: px2rem(22px);
+  padding-left: px2rem(28px);
+}
+
+.lj-checkbox-input {
+  position: absolute;
+  display: inline-block;
+  width: px2rem(22px);
+  height: px2rem(22px);
+  top: 0;
+  left: 0;
+  background: url(/ljcomponent/images/icon_check_normal@3x.png) no-repeat;
+  background-size: px2rem(22px) px2rem(22px);
+  &.is-checked {
+    background: url(/ljcomponent/images/icon_check_selected@3x.png) no-repeat;
+    background-size: px2rem(22px) px2rem(22px);
+  }
+}
+
+.lj-checkbox-origin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: px2rem(22px);
+  height: px2rem(22px);
+  opacity: 0;
+  z-index: -1;
+}

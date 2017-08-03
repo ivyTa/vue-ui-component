@@ -5,6 +5,7 @@ import LjDialog from '../packages/dialog/index';
 import LjWatermark from '../packages/watermark/index';
 import LjInput from '../packages/input/index';
 import LjRadio from '../packages/radio/index';
+import LjCheckbox from '../packages/checkbox/index';
 
 const components = [
     LjButton,
@@ -17,6 +18,7 @@ const components = [
     LjWatermark,
     LjInput,
     LjRadio,
+    LjCheckbox,
 ];
 
 const install = function (Vue) {
@@ -40,4 +42,5 @@ export  {
     LjWatermark,
     LjInput,
     LjRadio,
+    LjCheckbox,
 };

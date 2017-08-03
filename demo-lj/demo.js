@@ -10,6 +10,7 @@ import {
     LjWatermark,
     LjInput,
     LjRadio,
+    LjCheckbox,
 } from '../src/index.js';
 import demo from './demo.vue';
 Vue.component(LjButton.name, LjButton);
@@ -22,6 +23,7 @@ Vue.component(LjDialog.name, LjDialog);
 Vue.component(LjWatermark.name, LjWatermark);
 Vue.component(LjInput.name, LjInput);
 Vue.component(LjRadio.name, LjRadio);
+Vue.component(LjCheckbox.name, LjCheckbox);
 new Vue({
     el: '#app',
     render: h => h(demo)
