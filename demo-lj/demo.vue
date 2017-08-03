@@ -99,6 +99,8 @@
             <lj-checkbox v-model="model">选项2</lj-checkbox>
             <lj-checkbox v-model="model">选项3</lj-checkbox>
             <lj-checkbox v-model="model">选项4</lj-checkbox>
+            <lj-checkbox v-model="model">选项5</lj-checkbox>
+            <lj-checkbox v-model="model">选项6</lj-checkbox>
         </div>
 
 
