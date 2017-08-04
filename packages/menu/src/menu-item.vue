@@ -1,6 +1,5 @@
 <template>
   <li class="lj-menu-item"
-    :style="paddingStyle"
     @click="handleClick"
     :class="{
       'is-active': active,

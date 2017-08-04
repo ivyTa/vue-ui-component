@@ -6,7 +6,7 @@
       'is-opened': opened
     }"
   >
-    <div class="lj-submenu_title" ref="submenu-title" :style="paddingStyle">
+    <div class="lj-submenu_title" ref="submenu-title">
       <slot name="title"></slot>
       <!--<i :class="{-->
         <!--'lj-submenu_icon-arrow': true,-->

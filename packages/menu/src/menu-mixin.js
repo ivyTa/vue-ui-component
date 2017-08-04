@@ -31,18 +31,5 @@ export default {
       }
       return parent;
     },
-    paddingStyle() {
-      if (this.rootMenu.mode !== 'vertical') return {};
-
-      let padding = 20;
-      let parent = this.$parent;
-      while (parent && parent.$options.componentName !== 'LjMenu') {
-        if (parent.$options.componentName === 'LjSubmenu') {
-          padding += 20;
-        }
-        parent = parent.$parent;
-      }
-      return {paddingLeft: padding + 'px'};
-    }
   }
 };
