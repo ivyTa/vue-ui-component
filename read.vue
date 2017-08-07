@@ -226,6 +226,10 @@
                 <h2 id="checkbox">Checkbox 多选</h2>
                 <h3>基本用法</h3>
                 <h3>Attributes</h3>
+                <div class="code-box">
+                    {{checkedOptions}}
+                    <lj-checkbox v-for="checkItem in checkList">{{checkItem}}</lj-checkbox>
+                </div>
             </div>
             </div>
         </div>
@@ -244,6 +248,9 @@
                 phone:'',
                 radio1:'1',
                 radio2:'2',
+                checkList:['周一','周二','周三','周四','周五','周六','周日'],
+                checkedOptions:[],
+                checked:'',
             }
         },
         computed: {
@@ -256,6 +263,7 @@
                     }
                 }
             },
-        }
+        },
+
     }
 </script>
