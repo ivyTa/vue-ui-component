@@ -7,7 +7,7 @@ module.exports = {
         'index' : './src/index.js',
         'eledemo':'./demo-ele/demo.js',
         'ljdemo':'./demo-lj/demo.js',
-        'README':'./README.js',
+        'README':'./read.js',
     },
     output: {
         path: path.resolve(__dirname, './build/'),

@@ -12,8 +12,8 @@ import {
     LjRadio,
     LjCheckbox,
 } from './src/index.js';
-import README from './README.vue';
-import './README.scss'
+import README from './read.vue';
+import './read.scss'
 Vue.component(LjButton.name, LjButton);
 Vue.component(LjTag.name, LjTag);
 Vue.component(LjMenu.name, LjMenu);
