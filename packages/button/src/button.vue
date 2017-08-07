@@ -4,7 +4,6 @@
             :type="nativeType"
             :class="[
                 type ? 'lj-button-' + type : '',
-                size ? 'lj-button-' + type : '',
                 {
                     'is-disabled': disabled,
                 }
@@ -21,9 +20,6 @@
             type: {
                 type: String,
                 default: 'default',
-            },
-            size: {
-                type: String,
             },
             nativeType: {
                 type: String,

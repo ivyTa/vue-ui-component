@@ -8,14 +8,17 @@
     export default{
         name:'LjInput',
         componentName:'LjInput',
+        data(){
+            return{
+                inputValue:'',
+            }
+        },
         props:{
             holder:{
                 type:String,
                 default:'请输入',
             },
-            inputValue:{
-                type:String,
-            }
+
         },
     }
 </script>

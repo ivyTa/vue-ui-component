@@ -14,12 +14,18 @@
   color: $color-main-grey9;
   @include bottomLine;
 }
+.lj-input-title{
+  float: left;
+  display: inline;
+  width: px2rem(100px);
+  text-align: left;
+}
 .lj-input{
   width: px2rem(280px);
   height: px2rem(21px);
   line-height: px2rem(21px);
   margin-right: px2rem(6px);
-  float: right;
+  float: left;
   margin-top: px2rem(14px);
   color: $color-main-grey9;
   background-color: inherit;

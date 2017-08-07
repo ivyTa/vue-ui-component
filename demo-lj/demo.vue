@@ -75,11 +75,11 @@
         </div>
 
         <div>
-            <h2 style="font-size: 20px;margin-top: 20px">watermark 水印</h2>
-            <lj-watermark :watermark_txt="'239310'"></lj-watermark>
+            <!--<h2 style="font-size: 20px;margin-top: 20px">watermark 水印</h2>-->
+            <!--<lj-watermark :watermark_txt="'239310'"></lj-watermark>-->
         </div>
         <div>
-            <h2 style="font-size: 20px;margin-top: 20px">input 表单</h2>
+            <h2 style="font-size: 20px;margin-top: 20px">input 输入框</h2>
             <lj-input :holder="'请输入姓名'">姓名</lj-input>
         </div>
 
