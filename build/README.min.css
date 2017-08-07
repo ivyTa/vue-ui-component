@@ -1082,6 +1082,7 @@ input.fixAKeyboard:focus {
   background-color: #fafafa;
   padding: 20px; }
   .code-box .btn-word {
+    margin-top: 20px;
     width: 800px;
     text-align: center;
     cursor: pointer;

@@ -1,10 +1,10 @@
 <template>
     <label class="lj-checkbox">
         <input type="checkbox" class="lj-checkbox-origin"
-               v-model="model"
+               v-model="model" :value="label"
         >
         <span class="lj-checkbox-input"
-              :class="{'is-checked':isChecked}"
+              :class="{'is-checked':model}"
         ></span>
         <slot></slot>
     </label>
@@ -17,6 +17,7 @@
             return{
                 model:'',
                 checkOptions:[],
+                label:{},
             }
         },
         created() {
