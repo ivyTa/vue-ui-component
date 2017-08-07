@@ -17,6 +17,10 @@
                             <li class="list-nav-item"><a href="#radio">Radio 单选</a></li>
                             <li class="list-nav-item"><a href="#checkbox">Checkbox 多选</a></li>
                         </ul>
+                        <div class="group-title">Notice 提示</div>
+                        <ul class="menu-list">
+                            <li class="list-nav-item"><a href="#dialog">Dialog 弹出框</a></li>
+                        </ul>
                     </li>
                     <li></li>
                 </ul>
@@ -289,6 +293,96 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="dialog-content">
+                    <h2 id="dialog">Dialog 弹出框</h2>
+                    <h3>基本用法</h3>
+                    <h3>Attributes</h3>
+                    <div class="code-box">
+                        <lj-button type="text" @click="dialogVisible = true">点击弹出对话框</lj-button>
+                        <lj-dialog
+                                title="获取语音验证码"
+                                :visible.sync="dialogVisible"
+                        >
+                            <span>验证码以电话的形式通知到您，请注意接听</span>
+                            <div slot="footer" class="dialog-footer">
+                                <span @click="dialogVisible = false">取消</span>
+                                <span @click="dialogVisible = false">好的</span>
+                            </div>
+                        </lj-dialog>
+                        <p @click="showDialogCode= !showDialogCode" class="btn-word">
+                            {{word('showDialogCode')}}</p>
+                        <div class="code" v-show="showDialogCode==true">
+                            <span class="high-light"><<span>lj-button type="text" @click="dialogVisible = true"</span>></span>点击弹出对话框<<span class="high-light">/lj-button></span><br>
+                            <span class="high-light"><<span>lj-dialog
+                                title="获取语音验证码"
+                                :visible.sync="dialogVisible"</span>></span><br>
+                            <span class="high-light"><<span>span</span>></span>验证码以电话的形式通知到您，请注意接听<<span class="high-light">/span></span><br>
+                            <span class="high-light"><<span>div slot="footer" class="dialog-footer"</span>></span><br>
+                            <span class="high-light"><<span>span @click="dialogVisible = false"</span>></span>取消<<span class="high-light">/span></span><br>
+                            <span class="high-light"><<span>span @click="dialogVisible = false"</span>></span>好的<<span class="high-light">/span></span><br>
+                            <span class="high-light"><</span> <span class="high-light">/div</span> <span class="high-light">></span><br>
+                            <span class="high-light"><<span class="high-light">script</span>></span><br>
+                            <span class="high-light">export default{</span><br>
+                            <span class="high-light" style="margin-left: 20px">data(){</span><br>
+                            <span class="high-light" style="margin-left: 40px">return{</span><br>
+                            <span class="high-light" style="margin-left: 60px">dialogVisible:false,</span><br>
+                            <span class="high-light" style="margin-left: 40px">}</span><br>
+                            <span class="high-light" style="margin-left: 20px">}</span><br>
+                            <span class="high-light">}</span><br>
+                            <span class="high-light"><<span class="high-light">/script</span>></span>
+
+                        </div>
+                    </div>
+                    <h3>Attributes</h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>参数</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>可选值</th>
+                            <th>默认值</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>visible</td>
+                            <td>是否显示 Dialog，支持 .sync 修饰符</td>
+                            <td>Boolean</td>
+                            <td>-</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td>title</td>
+                            <td>Dialog 的标题，也可通过具名 slot传入</td>
+                            <td>String</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>size</td>
+                            <td>Dialog 的大小</td>
+                            <td>String</td>
+                            <td>small，large</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>close-on-click-modal</td>
+                            <td>是否可以通过点击 modal 关闭 Dialog</td>
+                            <td>Boolean</td>
+                            <td>-</td>
+                            <td>true</td>
+                        </tr>
+                        <tr>
+                            <td>close-on-press-escape</td>
+                            <td>是否可以通过按下 ESC 关闭 Dialog</td>
+                            <td>Boolean</td>
+                            <td>-</td>
+                            <td>true</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="footer"></div>
@@ -303,6 +397,7 @@
                 showInputCode: false,
                 showRadioCode: false,
                 showCheckboxCode: false,
+                showDialogCode: false,
                 name: '',
                 phone: '',
                 radio1: '1',
@@ -310,6 +405,7 @@
                 checkList: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
                 checkedOptions: [],
                 checked: '',
+                dialogVisible:false,
             }
         },
         computed: {

@@ -1101,16 +1101,18 @@ input.fixAKeyboard:focus {
 table {
   text-align: left;
   line-height: 2;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px; }
   table thead {
-    background-color: #f5f5f5; }
+    background-color: #f5f5f5;
+    font-size: 16px; }
   table th:nth-child(1), table td:nth-child(1) {
-    width: 80px; }
+    width: 100px; }
   table th:nth-child(2), table td:nth-child(2) {
-    width: 150px; }
+    width: 250px; }
   table th:nth-child(3), table td:nth-child(3) {
-    width: 200px; }
+    width: 150px; }
   table th:nth-child(4), table td:nth-child(4) {
-    width: 270px; }
+    width: 200px; }
   table th:nth-child(5), table td:nth-child(5) {
     width: 100px; }
