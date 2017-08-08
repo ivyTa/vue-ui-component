@@ -69,5 +69,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.lj-menu-item-group{
+  .lj-menu-item{
+    padding-left: px2rem(20px);
+  }
+}
 
 

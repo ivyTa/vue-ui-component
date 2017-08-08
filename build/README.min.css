@@ -485,6 +485,9 @@ input.fixAKeyboard:focus {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.lj-menu-item-group .lj-menu-item {
+  padding-left: 1rem; }
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

@@ -21,6 +21,10 @@
                         <ul class="menu-list">
                             <li class="list-nav-item"><a href="#dialog">Dialog 弹出框</a></li>
                         </ul>
+                        <div class="group-title">Navigation 导航</div>
+                        <ul class="menu-list">
+                            <li class="list-nav-item"><a href="#menu">Menu 菜单</a></li>
+                        </ul>
                     </li>
                     <li></li>
                 </ul>
@@ -383,6 +387,174 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="menu-content">
+                    <h2 id="menu">Menu 菜单</h2>
+                    <h3>基本用法-顶栏</h3>
+                    <div class="code-box">
+                        <lj-menu :default-active="'1'" class="lj-menu-demo1" mode="horizontal" @select="handleSelect">
+                            <lj-menu-item index="1">二手房</lj-menu-item>
+                            <lj-submenu index="2">
+                                <template slot="title">新房</template>
+                                <lj-menu-item index="2-1">选项1</lj-menu-item>
+                                <lj-menu-item index="2-2">选项2</lj-menu-item>
+                                <lj-menu-item index="2-3">选项3</lj-menu-item>
+                            </lj-submenu>
+                            <lj-menu-item index="3">租房</lj-menu-item>
+                            <lj-menu-item index="4">业主</lj-menu-item>
+                            <lj-menu-item index="5">百科</lj-menu-item>
+                            <lj-menu-item index="6">海外</lj-menu-item>
+                            <lj-menu-item index="7">旅居</lj-menu-item>
+                        </lj-menu>
+
+                        <p @click="showMenu1Code= !showMenu1Code" class="btn-word">
+                            {{word('showMenu1Code')}}</p>
+                        <div class="code" v-show="showMenu1Code==true">
+                            <span class="high-light"><<span>lj-menu :default-active="'1'" class="lj-menu-demo1" mode="horizontal" @select="handleSelect"</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1"</span>></span>二手房<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-submenu index="2"</span>></span><br>
+                            <span class="high-light"><<span>template slot="title"</span>></span>新房<<span class="high-light">/template></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="2-1"</span>></span>选项1<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="2-2"</span>></span>选项2<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="2-3"</span>></span>选项3<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>/lj-submenu</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="3"</span>></span>租房<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="4"</span>></span>业主<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="5"</span>></span>百科<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="6"</span>></span>海外<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="7"</span>></span>旅居<<span class="high-light">/lj-menu-item></span><br>
+
+                            <span class="high-light"><<span class="high-light">script</span>></span><br>
+                            <span class="high-light">export default{</span><br>
+                            <span class="high-light" style="margin-left: 20px">methods:{</span><br>
+                            <span class="high-light" style="margin-left: 60px">handleSelect(key, keyPath) {</span><br>
+                            <span class="high-light" style="margin-left: 80px"> console.log(key, keyPath);</span><br>
+                            <span class="high-light" style="margin-left: 40px">}</span><br>
+                            <span class="high-light" style="margin-left: 20px">}</span><br>
+                            <span class="high-light">}</span><br>
+                            <span class="high-light"><<span class="high-light">/script</span>></span>
+
+                        </div>
+                    </div>
+                    <h3>基本用法-黑色主题</h3>
+                    <div class="code-box">
+                        <lj-menu :default-active="'2'" class="lj-menu-demo2" mode="horizontal" theme="dark" @select="handleSelect">
+                            <lj-menu-item index="1">二手房</lj-menu-item>
+                            <lj-menu-item index="2">新房</lj-menu-item>
+                            <lj-menu-item index="3">租房</lj-menu-item>
+                        </lj-menu>
+
+                        <p @click="showMenu2Code= !showMenu2Code" class="btn-word">
+                            {{word('showMenu2Code')}}</p>
+                        <div class="code" v-show="showMenu2Code==true">
+                            <span class="high-light"><<span>lj-menu :default-active="'2'" class="lj-menu-demo2" mode="horizontal" theme="dark" @select="handleSelect"</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1"</span>></span>二手房<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="2"</span>></span>新房<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="3"</span>></span>租房<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>/lj-menu</span>></span><br>
+
+                            <span class="high-light"><<span class="high-light">script</span>></span><br>
+                            <span class="high-light">export default{</span><br>
+                            <span class="high-light" style="margin-left: 20px">methods:{</span><br>
+                            <span class="high-light" style="margin-left: 60px">handleSelect(key, keyPath) {</span><br>
+                            <span class="high-light" style="margin-left: 80px"> console.log(key, keyPath);</span><br>
+                            <span class="high-light" style="margin-left: 40px">}</span><br>
+                            <span class="high-light" style="margin-left: 20px">}</span><br>
+                            <span class="high-light">}</span><br>
+                            <span class="high-light"><<span class="high-light">/script</span>></span>
+
+                        </div>
+                    </div>
+                    <h3>侧边栏</h3>
+                    <div class="code-box">
+                        <lj-menu default-active="2" class="lj-menu-demo3">
+                            <lj-submenu index="1">
+                                <template slot="title">导航一</template>
+                                <lj-menu-item-group>
+                                    <template slot="title">分组一</template>
+                                    <lj-menu-item index="1-1">选项1</lj-menu-item>
+                                    <lj-menu-item index="1-2">选项2</lj-menu-item>
+                                </lj-menu-item-group>
+                                <lj-menu-item-group title="分组2">
+                                    <lj-menu-item index="1-3">选项3</lj-menu-item>
+                                </lj-menu-item-group>
+                                <lj-submenu index="1-4">
+                                    <template slot="title">选项4</template>
+                                    <lj-menu-item index="1-4-1">选项1</lj-menu-item>
+                                </lj-submenu>
+                            </lj-submenu>
+                            <lj-menu-item index="2">导航二</lj-menu-item>
+                            <lj-menu-item index="3">导航三</lj-menu-item>
+                        </lj-menu>
+
+                        <p @click="showMenu3Code= !showMenu3Code" class="btn-word">
+                            {{word('showMenu3Code')}}</p>
+                        <div class="code" v-show="showMenu3Code==true">
+                            <span class="high-light"><<span>lj-menu default-active="2" class="lj-menu-demo3"</span>></span><br>
+                            <span class="high-light"><<span>lj-submenu index="1"</span>></span><br>
+                            <span class="high-light"><<span>template slot="title"</span>></span>导航一<<span class="high-light">/template></span><br>
+                            <span class="high-light"><<span>lj-menu-item-group</span>></span><br>
+                            <span class="high-light"><<span>template slot="title"</span>></span>分组一<<span class="high-light">/template></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1-1"</span>></span>选项1<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1-2"</span>></span>选项2<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>／lj-menu-item-group</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item-group title="分组2"</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1-3"</span>></span>选项3<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>／lj-menu-item-group</span>></span><br>
+                            <span class="high-light"><<span>lj-submenu index="1-4"</span>></span><br>
+                            <span class="high-light"><<span>template slot="title"</span>></span>选项4<<span class="high-light">/template></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="1-4-1"</span>></span>选项1<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>/lj-submenu</span>></span><br>
+                            <span class="high-light"><<span>/lj-submenu</span>></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="2"</span>></span>导航二<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span>lj-menu-item index="3"</span>></span>导航三<<span class="high-light">/lj-menu-item></span><br>
+                            <span class="high-light"><<span class="high-light">script</span>></span><br>
+                            <span class="high-light">export default{</span><br>
+                            <span class="high-light" style="margin-left: 20px">methods:{</span><br>
+                            <span class="high-light" style="margin-left: 60px">handleSelect(key, keyPath) {</span><br>
+                            <span class="high-light" style="margin-left: 80px"> console.log(key, keyPath);</span><br>
+                            <span class="high-light" style="margin-left: 40px">}</span><br>
+                            <span class="high-light" style="margin-left: 20px">}</span><br>
+                            <span class="high-light">}</span><br>
+                            <span class="high-light"><<span class="high-light">/script</span>></span>
+
+                        </div>
+                    </div>
+                    <h3>Attributes</h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>参数</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>可选值</th>
+                            <th>默认值</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>mode</td>
+                            <td>模式</td>
+                            <td>String</td>
+                            <td>horizontal,vertical</td>
+                            <td>vertical</td>
+                        </tr>
+                        <tr>
+                            <td>theme</td>
+                            <td>主题色</td>
+                            <td>String</td>
+                            <td>light,dark</td>
+                            <td>light</td>
+                        </tr>
+                        <tr>
+                            <td>default-active</td>
+                            <td>当前激活菜单的 index</td>
+                            <td>String</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div class="footer"></div>
@@ -398,6 +570,9 @@
                 showRadioCode: false,
                 showCheckboxCode: false,
                 showDialogCode: false,
+                showMenu1Code: false,
+                showMenu2Code: false,
+                showMenu3Code: false,
                 name: '',
                 phone: '',
                 radio1: '1',
@@ -419,6 +594,11 @@
                 }
             },
         },
+        methods: {
+            handleSelect(key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
 
     }
 </script>
