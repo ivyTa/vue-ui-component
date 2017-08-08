@@ -75,10 +75,17 @@
                         </tr>
                         <tr>
                             <td>disabled</td>
-                            <td>是否禁用状态	</td>
+                            <td>是否禁用状态</td>
                             <td>Boolean</td>
                             <td>-</td>
                             <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>native-type</td>
+                            <td>原生 type 属性</td>
+                            <td>String</td>
+                            <td>button,submit,reset</td>
+                            <td>button</td>
                         </tr>
                         </tbody>
                     </table>

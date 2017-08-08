@@ -605,7 +605,7 @@ input.fixAKeyboard:focus {
 .lj-dialog {
   position: absolute;
   width: 13.5rem;
-  top: 50%;
+  top: 50% !important;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);

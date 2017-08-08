@@ -1,5 +1,5 @@
 <template>
-    <div :disabled="disabled" class="lj-button"
+    <button :disabled="disabled" class="lj-button"
             @click="handleClick"
             :type="nativeType"
             :class="[
@@ -10,12 +10,13 @@
             ]"
     >
         <slot></slot>
-    </div>
+    </button>
 
 </template>
 <script>
     export default{
         name: 'LjButton',
+        componentName:'LjButton',
         props: {
             type: {
                 type: String,
