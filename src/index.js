@@ -6,6 +6,8 @@ import LjWatermark from '../packages/watermark/index';
 import LjInput from '../packages/input/index';
 import LjRadio from '../packages/radio/index';
 import LjCheckbox from '../packages/checkbox/index';
+import LjToast from '../packages/toast/index';
+import LjSelect from '../packages/select/index';
 
 const components = [
     LjButton,
@@ -19,6 +21,8 @@ const components = [
     LjInput,
     LjRadio,
     LjCheckbox,
+    LjToast,
+    LjSelect,
 ];
 
 const install = function (Vue) {
@@ -44,4 +48,6 @@ export  {
     LjInput,
     LjRadio,
     LjCheckbox,
+    LjToast,
+    LjSelect,
 };

@@ -20,6 +20,7 @@
                         <div class="group-title">Notice 提示</div>
                         <ul class="menu-list">
                             <li class="list-nav-item"><a href="#dialog">Dialog 弹出框</a></li>
+                            <li class="list-nav-item"><a href="#toast">Toast 提示</a></li>
                         </ul>
                         <div class="group-title">Navigation 导航</div>
                         <ul class="menu-list">
@@ -36,17 +37,29 @@
                     <h3>基本用法</h3>
                     <div class="code-box">
                         <lj-button type="main">重要按钮</lj-button>
+                        <lj-button type="main" :disabled="true">重要按钮</lj-button>
+                        <br><br>
                         <lj-button type="common">一般按钮</lj-button>
+                        <lj-button type="common" :disabled="true">一般按钮</lj-button>
+                        <br><br>
                         <lj-button type="color">色块按钮</lj-button>
+                        <lj-button type="color" :disabled="true">色块按钮</lj-button>
+                        <br><br>
                         <lj-button type="grey">灰色按钮</lj-button>
                         <lj-button type="text">文本按钮</lj-button>
                         <p @click="showBtnCode= !showBtnCode" class="btn-word">{{word('showBtnCode')}}</p>
                         <div class="code" v-show="showBtnCode==true">
                             <span class="high-light"><<span>lj-button type="main"</span>></span>重要按钮<<span
                                 class="high-light">/lj-button></span><br>
+                            <span class="high-light"><<span>lj-button type="main" :disabled="true"</span>></span>重要按钮<<span
+                                class="high-light">/lj-button></span><br>
                             <span class="high-light"><<span>lj-button type="common"</span>></span>一般按钮<<span
                                 class="high-light">/lj-button></span><br>
+                            <span class="high-light"><<span>lj-button type="common" :disabled="true"</span>></span>一般按钮<<span
+                                class="high-light">/lj-button></span><br>
                             <span class="high-light"><<span>lj-button type="color"</span>></span>色块按钮<<span
+                                class="high-light">/lj-button></span><br>
+                            <span class="high-light"><<span>lj-button type="color" :disabled="true"</span>></span>色块按钮<<span
                                 class="high-light">/lj-button></span><br>
                             <span class="high-light"><<span>lj-button type="grey"</span>></span>灰色按钮<<span
                                 class="high-light">/lj-button></span><br>
@@ -257,11 +270,11 @@
                     <h3>基本用法</h3>
                     <h3>Attributes</h3>
                     <div class="code-box">
-                        <lj-checkbox v-for="checkItem in checkList" :value="checkItem">{{checkItem}}</lj-checkbox>
+                        <lj-checkbox v-for="checkItem in checkList" :label="checkItem" :checks="list">{{checkItem}}</lj-checkbox>
                         <p @click="showCheckboxCode= !showCheckboxCode" class="btn-word">
                             {{word('showCheckboxCode')}}</p>
                         <div class="code" v-show="showCheckboxCode==true">
-                            <span class="high-light"><<span>lj-checkbox v-for="checkItem in checkList" :value="checkItem"</span>></span><span>{{</span>checkItem <span>}}</span></span>
+                            <span class="high-light"><<span>lj-checkbox v-for="checkItem in checkList"  :label="checkItem" :checks="list""</span>></span><span>{{</span>checkItem <span>}}</span></span>
                             <<span class="high-light">/lj-checkbox></span><br>
                             <span class="high-light"><<span class="high-light">script</span>></span><br>
                             <span class="high-light">export default{</span><br>
@@ -390,6 +403,52 @@
                             <td>Boolean</td>
                             <td>-</td>
                             <td>true</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="toast-content">
+                    <h2 id="toast">Toast 提示</h2>
+                    <h3>图文</h3>
+                    <div class="code-box">
+                        <lj-toast type="image-text">正在加载</lj-toast>
+
+                        <p @click="showToast1Code= !showToast1Code" class="btn-word">
+                            {{word('showToast1Code')}}</p>
+                        <div class="code" v-show="showToast1Code==true">
+                            <span class="high-light"><<span>j-toast type="image-text"</span>></span>正在加载<<span
+                                class="high-light">/lj-toast></span><br>
+                        </div>
+                    </div>
+                    <h3>纯文字</h3>
+                    <div class="code-box">
+                        <lj-toast type="text">贷款金额超出房屋售价</lj-toast>
+
+                        <p @click="showToast2Code= !showToast2Code" class="btn-word">
+                            {{word('showToast2Code')}}</p>
+                        <div class="code" v-show="showToast2Code==true">
+                            <span class="high-light"><<span>j-toast type="text"</span>></span>贷款金额超出房屋售价<<span
+                                class="high-light">/lj-toast></span><br>
+                        </div>
+                    </div>
+                    <h3>Attributes</h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>参数</th>
+                            <th>说明</th>
+                            <th>类型</th>
+                            <th>可选值</th>
+                            <th>默认值</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>type</td>
+                            <td>类型</td>
+                            <td>String</td>
+                            <td>image-text,text</td>
+                            <td>text</td>
                         </tr>
                         </tbody>
                     </table>
@@ -580,13 +639,14 @@
                 showMenu1Code: false,
                 showMenu2Code: false,
                 showMenu3Code: false,
+                showToast1Code: false,
+                showToast2Code: false,
                 name: '',
                 phone: '',
                 radio1: '1',
                 radio2: '2',
                 checkList: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-                checkedOptions: [],
-                checked: '',
+                list: ['周一','周二',],
                 dialogVisible:false,
             }
         },

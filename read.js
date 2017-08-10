@@ -11,6 +11,7 @@ import {
     LjInput,
     LjRadio,
     LjCheckbox,
+    LjToast,
 } from './src/index.js';
 import README from './read.vue';
 import './read.scss'
@@ -25,6 +26,7 @@ Vue.component(LjWatermark.name, LjWatermark);
 Vue.component(LjInput.name, LjInput);
 Vue.component(LjRadio.name, LjRadio);
 Vue.component(LjCheckbox.name, LjCheckbox);
+Vue.component(LjToast.name, LjToast);
 
 new Vue({
     el: '#app',

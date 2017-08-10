@@ -1,0 +1,49 @@
+@import "./common/var.scss";
+@keyframes loading {
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+.lj-toast{
+  background-color: rgba(0,0,0,0.8);
+  color:$color-main-grey1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+}
+.lj-toast-image-text{
+  width: px2rem(130px);
+  height: px2rem(130px);
+  border-radius: px2rem(8px);
+  font-size: $font-size-smallest;
+  .loading{
+    display: inline-block;
+    background: url("/ljcomponent/images/loading.png");
+    width: px2rem(80px);
+    height: px2rem(80px);
+    margin: px2rem(10px) px2rem(25px);
+    background-size:contain;
+    animation: loading 1s linear infinite;
+  }
+  .tips{
+    text-align: center;
+    margin-top: px2rem(-10px);
+  }
+}
+
+.lj-toast-text{
+  height: px2rem(42px);
+  line-height: px2rem(42px);
+  padding: 0 px2rem(20px);
+  border-radius: px2rem(4px);
+  font-size: $font-size-medium;
+  .tips{
+    text-align: center;
+  }
+}
+

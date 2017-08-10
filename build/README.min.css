@@ -120,6 +120,9 @@ input.fixAKeyboard:focus {
   height: 2.45rem;
   line-height: 2.45rem; }
 
+.lj-button-main + .is-disabled {
+  background-color: #b2e6d1; }
+
 .lj-button-common {
   height: 2rem;
   line-height: 2rem;
@@ -137,8 +140,15 @@ input.fixAKeyboard:focus {
   color: #00ae66;
   border: 1px solid #00ae66; }
 
+.lj-button-common + .is-disabled {
+  border: 1px solid #f5f5f5;
+  color: #cdcfd0; }
+
 .lj-button-color {
   background-color: #00ae66; }
+
+.lj-button-color + .is-disabled {
+  background-color: #b2e6d1; }
 
 .lj-button-grey {
   height: 1.5rem;
@@ -1046,6 +1056,266 @@ input.fixAKeyboard:focus {
   opacity: 0;
   z-index: -1; }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%; }
+
+input[type="submit"], input[type="reset"], input[type="button"], input {
+  resize: none;
+  border: none; }
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+img {
+  width: 100%;
+  height: auto;
+  width: auto \9;
+  display: block;
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  -webkit-text-size-adjust: none; }
+
+em, i {
+  font-style: normal; }
+
+ul, li {
+  list-style-type: none; }
+
+strong {
+  font-weight: normal; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img, input, textarea, button {
+  border: none;
+  outline: none; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+textarea:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+textarea:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent; }
+
+textarea {
+  -webkit-appearance: none;
+  resize: none; }
+
+textarea.fixAndroidKeyboard:focus,
+input.fixAKeyboard:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-modify: read-write-plaintext-only; }
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.lj-toast {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999; }
+
+.lj-toast-image-text {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.6rem; }
+  .lj-toast-image-text .loading {
+    display: inline-block;
+    background: url("/ljcomponent/images/loading.png");
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem 1.25rem;
+    background-size: contain;
+    -webkit-animation: loading 1s linear infinite;
+            animation: loading 1s linear infinite; }
+  .lj-toast-image-text .tips {
+    text-align: center;
+    margin-top: -0.5rem; }
+
+.lj-toast-text {
+  height: 2.1rem;
+  line-height: 2.1rem;
+  padding: 0 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem; }
+  .lj-toast-text .tips {
+    text-align: center; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%; }
+
+input[type="submit"], input[type="reset"], input[type="button"], input {
+  resize: none;
+  border: none; }
+
+body, div, ul, li, ol, h1, h2, h3, h4, h5, h6, input, textarea, select, p, dl, dt, dd, a, img, button, form, table, th, tr, td, tbody, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+img {
+  width: 100%;
+  height: auto;
+  width: auto \9;
+  display: block;
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  -webkit-text-size-adjust: none; }
+
+em, i {
+  font-style: normal; }
+
+ul, li {
+  list-style-type: none; }
+
+strong {
+  font-weight: normal; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img, input, textarea, button {
+  border: none;
+  outline: none; }
+
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+textarea:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+textarea:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+textarea:focus:-ms-input-placeholder {
+  color: transparent; }
+
+textarea {
+  -webkit-appearance: none;
+  resize: none; }
+
+textarea.fixAndroidKeyboard:focus,
+input.fixAKeyboard:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-modify: read-write-plaintext-only; }
+
 .wrapper {
   width: 1100px;
   margin: 0 auto; }
@@ -1083,7 +1353,8 @@ input.fixAKeyboard:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fafafa;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
   .code-box .btn-word {
     margin-top: 20px;
     width: 800px;
@@ -1119,3 +1390,7 @@ table {
     width: 200px; }
   table th:nth-child(5), table td:nth-child(5) {
     width: 100px; }
+
+.toast-content .btn-word {
+  margin-top: 130px;
+  text-align: left; }

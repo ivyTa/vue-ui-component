@@ -24,7 +24,7 @@
             },
             nativeType: {
                 type: String,
-                default: 'button'
+                default: 'button',
             },
             disabled: Boolean,
         },

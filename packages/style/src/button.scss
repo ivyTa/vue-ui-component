@@ -19,6 +19,9 @@
   height: px2rem(49px);
   line-height: px2rem(49px);
 }
+.lj-button-main+.is-disabled{
+  background-color: $color-main-green3;
+}
 //一般按钮，色块按钮common,color
 @each $type in common,color{
   .lj-button-#{$type}{
@@ -33,8 +36,16 @@
   color: $color-main-green6;
   border: $border-width-base $border-style-base $border-color-green;
 }
+.lj-button-common+.is-disabled{
+  border: $border-width-base $border-style-base $color-main-grey3;
+  color:$color-main-grey5;
+}
 .lj-button-color{
   background-color: $color-main-green6;
+}
+
+.lj-button-color+.is-disabled{
+  background-color: $color-main-green3;
 }
 //灰色按钮
 .lj-button-grey{

@@ -37,6 +37,7 @@
     box-sizing: border-box;
     background-color: $color-main-grey2;
     padding: 20px;
+    position: relative;
     .btn-word{
         margin-top:20px;
         width: 800px;
@@ -84,3 +85,7 @@ table{
     }
 }
 
+.toast-content .btn-word {
+    margin-top: 130px;
+    text-align: left;
+}
