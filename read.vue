@@ -281,6 +281,7 @@
                             <span class="high-light" style="margin-left: 20px">data(){</span><br>
                             <span class="high-light" style="margin-left: 40px">return{</span><br>
                             <span class="high-light" style="margin-left: 60px">checkList:['周一','周二','周三','周四','周五','周六','周日'],</span><br>
+                            <span class="high-light" style="margin-left: 60px">list: ['周一','周二'],</span><br>
                             <span class="high-light" style="margin-left: 40px">}</span><br>
                             <span class="high-light" style="margin-left: 20px">}</span><br>
                             <span class="high-light">}</span><br>
@@ -646,7 +647,7 @@
                 radio1: '1',
                 radio2: '2',
                 checkList: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-                list: ['周一','周二',],
+                list: ['周一','周二'],
                 dialogVisible:false,
             }
         },
